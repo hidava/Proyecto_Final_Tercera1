@@ -83,3 +83,66 @@ menu {
 .menu-derecha a:hover {
     transform: scale(1.05);
 }
+
+.main-accordion-container {
+
+    background-color: white;
+    width: 90%;
+    margin-top: 70px;
+}
+
+
+.accordion-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    height: 150px;
+}
+
+.accordion-item:hover {
+    transform: scale(0.95);
+    border: 1px black;
+}
+
+.accordion-title {
+    width: 100%;
+    background-color: rgb(173, 234, 234);
+    height: 200px;
+    color: rgb(14, 13, 13);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.accordion-desc {
+    display: none;
+    color: #7a7f80;
+    letter-spacing: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+}
+
+.accordion-title .tab-active {
+    font-size: 100px;
+    pointer-events: visible;
+}
+
+.tab-active .accordion-desc {
+    width: 100%;
+    background-color: white;
+    height:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0;
+
+}

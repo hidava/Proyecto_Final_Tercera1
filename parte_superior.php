@@ -39,15 +39,15 @@
         <a href="">
         <img src="./img/facebook.png" alt="Icono 2" height="30">
         </a>
-        <a href="">
-        <img src="./img/mundo.png" alt="Icono 3" height="30">
+        <a href=""> 
+        <img src="./img/mundo.png" alt="Icono 3" height=" 30"> 
         </a>
         <a href="">
         <img src="./img/correo.png" alt="Icono 4" height="30">
         </a>
 
 
-    
+        
       </div>
 
       
