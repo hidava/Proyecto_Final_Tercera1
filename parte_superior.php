@@ -1,5 +1,5 @@
-<!DOCTYPE htlm>
-<html lang= "Spanish">
+<!DOCTYPE html>
+<html lang="es">
 
 
 <head>
@@ -14,7 +14,7 @@
 
    <div class="menu-up">
      <a href= "./">
-     <img src= "./img/cerebro.png" alt="" height="100">
+     <img src= "./img/cerebro.png" alt="" height="90">
      </a>
     </div>
 

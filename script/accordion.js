@@ -9,11 +9,11 @@ const dataAccordion = [
     {
         title: "Meditación",
         desc: "🌟 Transforma tu Vida a Través del Yoga y la Meditación 🌟",
-        desc1:"¿Buscas un espacio para desconectar del estrés diario y reconectar contigo mismo? Te invitamos a nuestras clases de yoga y meditación, donde podrás descubrir el poder transformador de estas prácticas."
+        desc1:"¿Buscas un espacio para reconectar contigo mismo? Te invitamos a nuestras clases de meditación, donde podrás descubrir el poder transformador de estas prácticas."
     },
     {
         title: "Pilates",
-        desc: "🌈 Un método de ejercicio que se centra en fortalecer el núcleo, mejorar la postura y aumentar la flexibilidad, todo mientras se promueve la conexión mente-cuerpo",
+        desc: "🌈 Un método de ejercicio que se centra en fortalecer el núcleo, mejorar la postura y aumentar la flexibilidad, todo mientras se promueve la conexión mente-cuerpo.",
         desc1:"A través de una serie de ejercicios que estiran y fortalecen los músculos, Pilates ayuda a aumentar la flexibilidad y la movilidad, reduciendo el riesgo de lesiones."
     },
 

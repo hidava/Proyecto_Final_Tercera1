@@ -22,7 +22,7 @@ menu {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 40px;
+    padding-left: 50px;
 
 }
 
@@ -84,21 +84,33 @@ menu {
     transform: scale(1.05);
 }
 
+.container {
+
+    display: flex; 
+    align-items: flex-start; 
+}
+
 .main-accordion-container {
 
     background-color: white;
-    width: 90%;
-    margin-top: 70px;
+    width: 100%;
+    margin-top: 42px;
+    padding-left: 55px;
+    padding: 35px;
 }
 
 
 .accordion-item {
-    width: 50%;
+
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: first baseline;
-    justify-content: center;
+
     height: 150px;
+    border-radius: 10px; /* Ajusta el valor  */
+    overflow: hidden; /* Evita que el contenido no sobresalga de los bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra */
+    margin: 10px; /* Espacio entre los acordeones*/
 }
 
 .accordion-item:hover {
@@ -111,15 +123,15 @@ menu {
     background-color: rgb(173, 234, 234);
     height: 200px;
     color: rgb(14, 13, 13);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Arial Narrow Bold';
     font-size: 40px;
     letter-spacing: 1px;
-    font-weight: 100px;
+    font-weight: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    
 }
 
 .accordion-desc {
@@ -145,4 +157,81 @@ menu {
     justify-content: center;
     padding: 3px 0;
 
+}
+
+.card-list {
+
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Alinea las tarjetas a la derecha */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
+    margin-left: 30px;
+}
+
+.card-item {
+
+    border: 1px solid rgb(196, 209, 209);
+    width: 39%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 29px;
+    box-shadow: 3px 3px 8px 0 rgb(173, 234, 234);
+}
+
+.card-item:hover {
+    transform: scale(1.01) translateY(-3px);
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-info {
+    height: auto;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.card-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #5d5e5f;
+    font-weight: bold;
+    font-family: 'Arial Narrow Bold';
+    margin-bottom: 20px;
+}
+
+.card-desc {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.card-cta {
+    width: 120px;
+    text-decoration: none;
+    color: rgb(240, 241, 250);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(78, 137, 138);
+}
+
+.card-cta:hover {
+transform: scale(1.01)translateY(2px)translateY(-2px);
 }
