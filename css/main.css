@@ -7,17 +7,16 @@
 
 menu {
 
-    background-color: white;
+    background-color: rgb(245, 241, 241);
     width: 100%;
-    height: 110px;
+    height: 100px;
 
 
 }
 
 .menu-up {
 
-    height: 90%;
-    border: 1px solid #adb9b9;
+    height: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,11 +26,12 @@ menu {
 }
 
 .menu-down {
-
-    height: 40%;
-    border: 2px solid #14d0d0;
+    height: 10%;
+    border: 2px solid #7adbdd;
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: 15px;
 
 }
 
@@ -42,22 +42,22 @@ menu {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 15px;
+    padding: 1x;
 
 }
 
 .menu-izquierda a {
 
     text-decoration: none;
-    color: #969ea1;
+    color: #716f6f;
     display: flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    height: 50px;
+    height: 5px;
     letter-spacing: 1px;
     white-space: nowrap;
-    line-height: 50px;
+    line-height: 10px;
     cursor: pointer;
     padding: 25px;
 }
@@ -71,12 +71,12 @@ menu {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding: 20px;
+    padding: 8px;
 
 }
 
 .menu-derecha a {
-    margin-left: 25px;
+    margin-left: 16px;
 
 }
 
@@ -85,32 +85,39 @@ menu {
 }
 
 .container {
-
-    display: flex; 
-    align-items: flex-start; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .main-accordion-container {
 
     background-color: white;
     width: 100%;
-    margin-top: 42px;
-    padding-left: 55px;
-    padding: 35px;
+    /* O ajusta según sea necesario */
+    max-width: 400px;
+    /* Ajusta el ancho máximo según sea necesario */
+    margin-top: 30px;
+    padding: 25px;
+    padding-right: 5%;
+
+
 }
 
 
 .accordion-item {
 
-    width: 100%;
+    width: 130%;
     display: flex;
     flex-direction: column;
 
-    height: 150px;
-    border-radius: 10px; /* Ajusta el valor  */
-    overflow: hidden; /* Evita que el contenido no sobresalga de los bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra */
-    margin: 10px; /* Espacio entre los acordeones*/
+
+    height: 140px;
+    border-radius: 10px;/* Ajusta el valor  */
+    overflow: hidden;/* Evita que el contenido no sobresalga de los bordes redondeados */
+   
+    margin: 35px;/* Espacio entre los acordeones*/
+    box-shadow: 3px 3px 8px 0 rgb(20, 21, 21);
 }
 
 .accordion-item:hover {
@@ -124,14 +131,14 @@ menu {
     height: 200px;
     color: rgb(14, 13, 13);
     font-family: 'Arial Narrow Bold';
-    font-size: 40px;
-    letter-spacing: 1px;
+    font-size: 30px;
+    letter-spacing: 2px;
     font-weight: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .accordion-desc {
@@ -150,7 +157,7 @@ menu {
 .tab-active .accordion-desc {
     width: 100%;
     background-color: white;
-    height:60px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,24 +168,24 @@ menu {
 
 .card-list {
 
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start; /* Alinea las tarjetas a la derecha */
-    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
-    margin-left: 30px;
+    justify-content: flex-start;/* Alinea las tarjetas a la derecha */
+    align-items: flex-start;/* Alinea las tarjetas en la parte superior */
+    margin-left: 6%;
 }
 
 .card-item {
 
     border: 1px solid rgb(196, 209, 209);
-    width: 39%;
+    width: 45%;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
     margin: 0 29px;
-    box-shadow: 3px 3px 8px 0 rgb(173, 234, 234);
+    box-shadow: 3px 3px 8px 0 rgb(21, 22, 22);
 }
 
 .card-item:hover {
@@ -206,7 +213,7 @@ menu {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 18px;
     color: #5d5e5f;
     font-weight: bold;
     font-family: 'Arial Narrow Bold';
@@ -217,6 +224,7 @@ menu {
     font-size: 15px;
     text-align: justify;
     margin-bottom: 15px;
+    color: #5d5e5f;
 }
 
 .card-cta {
@@ -229,9 +237,103 @@ menu {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    background-color: rgb(78, 137, 138);
+    background-color: rgb(77, 167, 167);
 }
 
 .card-cta:hover {
-transform: scale(1.01)translateY(2px)translateY(-2px);
+    transform: scale(1.01)translateY(2px)translateY(-2px);
+}
+
+.carrusel {
+    width: 50%;
+    /* O cualquier otro valor que desees */
+    max-width: 350px;
+    /* Por ejemplo, un ancho máximo */
+    margin: 10px auto;
+    /* Centra el carrusel */
+
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+    position: relative;
+    /* Para posicionar elementos hijos si es necesario */
+}
+
+.carrusel .grande {
+    display: flex;
+    transition: transform 0.8s ease;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.carrusel .img {
+    height: 90%;
+    /* Ajusta según necesites */
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+.carrusel .puntos {
+    display: flex;
+    /* Usar flexbox para alinear los puntos */
+    justify-content: center;
+    /* Centra los puntos horizontalmente */
+    margin-top: 45px;
+    /* Espacio entre el carrusel y los puntos */
+    padding: 0;
+    /* Elimina el padding por defecto */
+    list-style: none;
+    /* Elimina los puntos de la lista */
+
+}
+
+.carrusel .punto {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    /* Cambia a transparente si no quieres color */
+    border: 2px solid rgb(21, 20, 21);
+    /* Agrega un borde si deseas que sean visibles */
+    border-radius: 50%;
+    /* Hace que los puntos sean circulares */
+    margin: 0 7px;
+    /* Espacio entre los puntos */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el punto */
+
+
+}
+
+.carrusel .punto.activo {
+    background-color: rgb(65, 168, 168);
+    /* Color de fondo para el punto activo */
+
+}
+
+.wrap {
+    font-family: 'Arial Narrow Bold';
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #14d0d0;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.texto{
+    text-align: start;
+    margin-top: 50px;
+    font-family: 'Arial Narrow Bold';
+    color:black;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+footer {
+    
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
 }
