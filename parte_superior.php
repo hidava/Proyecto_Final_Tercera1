@@ -18,15 +18,21 @@
 
 
         <div class="menu-down">
-            <div class="menu-izquierda">
-                <a href="">Recursos Educativos</a>
-                <a href="">Herramientas Interactivas</a>
-                <a href="">Sección de Apoyo</a>
-                <a href="">Contenido Multimedia</a>
-                <a href="">No estás solo</a>
-                <a href="">Comunidad</a>
-            </div>
-
+        <div class="menu-container">
+         <div class="menu-izquierda">
+         <a href="">Recursos Educativos</a>
+        <a href="">Herramientas Interactivas</a>
+        <a href="">Sección de Apoyo</a>
+        <a href="">Contenido Multimedia</a>
+        <a href="">No estás solo</a>
+        <a href="">Comunidad</a>
+    </div>
+    <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
             
             <div class="menu-derecha">
                 <a href="">
@@ -41,6 +47,8 @@
                 <a href="">
                     <img src="./img/correo.png" alt="Icono Correo" height="30">
                 </a>
+                <a href="">Login</a>
+                    
             </div>
         </div>
     </nav>

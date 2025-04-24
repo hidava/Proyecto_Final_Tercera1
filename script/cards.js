@@ -7,7 +7,7 @@ const dataCards = [
         "url_image": "./img/respira.png",
         "desc": "La respiración consciente es una herramienta poderosa para manejar la ansiedad. Aquí te presento algunas técnicas efectivas:",
         "cta": "Mostrar más...",
-        "link": "https://www.bupasalud.com/salud/ejercicios-de-respiraci%C3%B3n-para-la-ansiedad"
+        "link": "https://www.youtube.com/watch?v=B5rhpspkyWw"
 
     },
 

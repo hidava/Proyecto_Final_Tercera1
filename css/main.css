@@ -1,339 +1,384 @@
+/* Establece un margen y un padding de 0 para todos los elementos */
 * {
-
-    margin: 0;
-    padding: 0;
-
+    margin: 0; 
+    padding: 0; 
 }
 
+/* Estilo para el elemento <menu> */
 menu {
-
-    background-color: rgb(245, 241, 241);
-    width: 100%;
-    height: 100px;
-
-
+    background-color: rgb(245, 241, 241); /* Color de fondo del menú */
+    width: 100%; /* Ancho completo del menú */
+    height: 100px; /* Altura del menú */
 }
 
+/* Estilo para la parte superior del menú */
 .menu-up {
-
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 50px;
-
+    height: 70%; /* Altura del 70% del menú */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dispone los elementos en fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    padding-left: 50px; /* Espacio a la izquierda */
 }
 
+/* Estilo para la parte inferior del menú */
 .menu-down {
-    height: 10%;
-    border: 2px solid #7adbdd;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 15px;
-
+    height: 10%; /* Altura del 10% del menú */
+    border: 2px solid #7adbdd; /* Borde de 2px de color específico */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dispone los elementos en fila */
+    position: relative; /* Posicionamiento relativo */
+    top: 15px; /* Desplazamiento hacia abajo */
 }
 
+/* Estilo para la sección izquierda del menú */
 .menu-izquierda {
-
-    width: 700px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1x;
-
+    width: 700px; /* Ancho fijo de 700px */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dispone los elementos en fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+    padding: 1px; /* Espacio interno  */
 }
 
+/* Estilo para los enlaces dentro de la sección izquierda del menú */
 .menu-izquierda a {
-
-    text-decoration: none;
-    color: #716f6f;
-    display: flex;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    font-weight: bold;
-    height: 5px;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    line-height: 10px;
-    cursor: pointer;
-    padding: 25px;
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #716f6f; /* Color del texto */
+    display: flex; /* Utiliza flexbox para el diseño */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fuentes utilizadas */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    height: 5px; /* Altura del enlace  */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    white-space: nowrap; /* Evita el salto de línea */
+    line-height: 10px; /* Altura de línea  */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    padding: 25px; /* Espacio interno del enlace */
 }
 
+/* Estilo para el estado hover de los enlaces en la sección izquierda */
 .menu-izquierda a:hover {
-    color: rgb(13, 12, 12);
+    color: rgb(13, 12, 12); /* Cambia el color del texto al pasar el mouse */
 }
 
+/* Estilo para la sección derecha del menú */
 .menu-derecha {
-
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding: 8px;
-
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-left: auto; /* Empuja la sección a la derecha */
+    padding: 8px; /* Espacio interno */
 }
 
+/* Estilo para los enlaces dentro de la sección derecha del menú */
 .menu-derecha a {
-    margin-left: 16px;
-
+    margin-left: 16px; /* Espacio a la izquierda de los enlaces */
+    font-family: 'Times New Roman'; /* Fuente utilizada */
+    color: #3ad1d3; /* Color del texto */
 }
 
+/* Estilo para el estado hover de los enlaces en la sección derecha */
 .menu-derecha a:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
 }
 
+/* Estilo para el contenedor principal */
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-end; /* Alinea los elementos al final */
 }
 
+/* Estilo para el contenedor principal de acordeones */
 .main-accordion-container {
-
-    background-color: white;
-    width: 100%;
-    /* O ajusta según sea necesario */
-    max-width: 400px;
-    /* Ajusta el ancho máximo según sea necesario */
-    margin-top: 30px;
-    padding: 25px;
-    padding-right: 5%;
-
-
+    background-color: white; /* Color de fondo blanco */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo de 400px */
+    margin-top: 30px; /* Espacio superior de 30px */
+    padding: 25px; /* Espacio interno de 25px */
+    padding-right: 5%; /* Espacio interno a la derecha del 5% */
 }
 
-
+/* Estilo para cada ítem del acordeón */
 .accordion-item {
-
-    width: 130%;
-    display: flex;
-    flex-direction: column;
-
-
-    height: 140px;
-    border-radius: 10px;/* Ajusta el valor  */
-    overflow: hidden;/* Evita que el contenido no sobresalga de los bordes redondeados */
-   
-    margin: 35px;/* Espacio entre los acordeones*/
-    box-shadow: 3px 3px 8px 0 rgb(20, 21, 21);
+    width: 130%; /* Ancho  */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Dispone los elementos en columna */
+    height: 140px; /* Altura fija */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+    margin: 35px; /* Espacio entre los acordeones */
+    box-shadow: 3px 3px 8px 0 rgb(20, 21, 21); /* Sombra alrededor del acordeón */
 }
 
+/* Estilo para el estado hover de los ítems del acordeón */
 .accordion-item:hover {
-    transform: scale(0.95);
-    border: 1px black;
+    transform: scale(0.95); /* Reduce el tamaño al pasar el mouse */
+    border: 1px black; /* Agrega un borde negro al pasar el mouse */
 }
 
+/* Estilo para el título del acordeón */
 .accordion-title {
-    width: 100%;
-    background-color: rgb(173, 234, 234);
-    height: 200px;
-    color: rgb(14, 13, 13);
-    font-family: 'Arial Narrow Bold';
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-weight: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    width: 100%; /* Ancho completo */
+    background-color: rgb(173, 234, 234); /* Color de fondo del título */
+    height: 200px; /* Altura del título */
+    color: rgb(14, 13, 13); /* Color del texto */
+    font-family: 'Arial Narrow Bold'; /* Fuente utilizada */
+    font-size: 30px; /* Tamaño de fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    font-weight: 100; /* Peso de fuente ligero */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Dispone los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
 }
 
+/* Estilo para la descripción del acordeón */
 .accordion-desc {
-    display: none;
-    color: #7a7f80;
-    letter-spacing: 1px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 12px;
+    display: none; /* Oculta la descripción por defecto */
+    color: #7a7f80; /* Color del texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fuentes utilizadas */
+    font-size: 12px; /* Tamaño de fuente */
 }
 
+/* Estilo para el título activo del acordeón */
 .accordion-title .tab-active {
-    font-size: 100px;
-    pointer-events: visible;
+    font-size: 100px; /* Tamaño de fuente grande para el título activo */
+    pointer-events: visible; /* Permite interacciones con el elemento */
 }
 
+/* Estilo para la descripción del acordeón cuando está activo */
 .tab-active .accordion-desc {
-    width: 100%;
-    background-color: white;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3px 0;
-
+    width: 100%; /* Ancho completo */
+    background-color: white; /* Color de fondo blanco */
+    height: 60px; /* Altura de la descripción */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Dispone los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    padding: 3px 0; /* Espacio interno vertical */
 }
 
+/* Estilo para la lista de tarjetas */
 .card-list {
-
-    margin-top: 30px;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;/* Alinea las tarjetas a la derecha */
-    align-items: flex-start;/* Alinea las tarjetas en la parte superior */
-    margin-left: 6%;
+    margin-top: 30px; /* Espacio superior de 30px */
+    padding: 40px; /* Espacio interno de 40px */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dispone los elementos en fila */
+    justify-content: flex-start; /* Alinea las tarjetas a la izquierda */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
+    margin-left: 4%; /* Espacio a la izquierda */
 }
 
+/* Estilo para cada tarjeta */
 .card-item {
-
-    border: 1px solid rgb(196, 209, 209);
-    width: 45%;
-    height: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 0 29px;
-    box-shadow: 3px 3px 8px 0 rgb(21, 22, 22);
+    border: 1px solid rgb(196, 209, 209); /* Borde de la tarjeta */
+    width: 45%; /* Ancho del 45% */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+    margin: 0 29px; /* Espacio horizontal entre tarjetas */
+    box-shadow: 3px 3px 8px 0 rgb(21, 22, 22); /* Sombra alrededor de la tarjeta */
 }
 
+/* Estilo para el estado hover de las tarjetas */
 .card-item:hover {
-    transform: scale(1.01) translateY(-3px);
+    transform: scale(1.01) translateY(-3px); /* Aumenta ligeramente el tamaño y desplaza hacia arriba */
 }
 
+/* Estilo para las imágenes dentro de las tarjetas */
 .card-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* Ancho completo de la imagen */
+    height: auto; /* Altura automática */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
 }
 
+/* Estilo para la información de la tarjeta */
 .card-info {
-    height: auto;
-    padding: 10px 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    height: auto; /* Altura automática */
+    padding: 10px 12px; /* Espacio interno */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Dispone los elementos en columna */
+    justify-content: space-around; /* Espacio entre los elementos */
+    align-items: flex-end; /* Alinea los elementos a la derecha */
 }
 
+/* Estilo para el título de la tarjeta */
 .card-title {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: #5d5e5f;
-    font-weight: bold;
-    font-family: 'Arial Narrow Bold';
-    margin-bottom: 20px;
+    width: 100%; /* Ancho completo */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dispone los elementos en fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    font-size: 18px; /* Tamaño de fuente */
+    color: #5d5e5f; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-family: 'Arial Narrow Bold'; /* Fuente utilizada */
+    margin-bottom: 20px; /* Espacio inferior de 20px */
 }
 
+/* Estilo para la descripción de la tarjeta */
 .card-desc {
-    font-size: 15px;
-    text-align: justify;
-    margin-bottom: 15px;
-    color: #5d5e5f;
+    font-size: 15px; /* Tamaño de fuente */
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 15px; /* Espacio inferior de 15px */
+    color: #5d5e5f; /* Color del texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
+/* Estilo para el botón de llamada a la acción de la tarjeta */
 .card-cta {
-    width: 120px;
-    text-decoration: none;
-    color: rgb(240, 241, 250);
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    background-color: rgb(77, 167, 167);
+    width: 120px; /* Ancho fijo de 120px */
+    text-decoration: none; /* Sin subrayado en el texto */
+    color: rgb(240, 241, 250); /* Color del texto */
+    border: 1px solid black; /* Borde negro */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dispone los elementos en fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    background-color: rgb(77, 167, 167); /* Color de fondo */
 }
 
+/* Estilo para el estado hover del botón de llamada a la acción */
 .card-cta:hover {
-    transform: scale(1.01)translateY(2px)translateY(-2px);
+    transform: scale(1.01) translateY(2px) translateY(-2px); /* Aumenta ligeramente el tamaño y desplaza hacia arriba y abajo */
 }
 
+/* Estilo para el carrusel */
 .carrusel {
-    width: 50%;
-    /* O cualquier otro valor que desees */
-    max-width: 350px;
-    /* Por ejemplo, un ancho máximo */
-    margin: 10px auto;
-    /* Centra el carrusel */
-
-    overflow: hidden;
-    /* Oculta el contenido que se desborda */
-    position: relative;
-    /* Para posicionar elementos hijos si es necesario */
+    width: 50%; /* Ancho del 50% */
+    max-width: 350px; /* Ancho máximo de 350px */
+    margin: 10px auto; /* Centra el carrusel */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative; /* Posicionamiento relativo */
 }
 
+/* Estilo para el contenedor grande del carrusel */
 .carrusel .grande {
-    display: flex;
-    transition: transform 0.8s ease;
-    margin-top: 15%;
-    width: 100%;
+    display: flex; /* Utiliza flexbox para el diseño */
+    transition: transform 0.15s ease; /* Transición suave para el movimiento */
+    margin-top: 15%; /* Espacio superior de 15% */
+    width: 100%; /* Ancho completo */
 }
 
+/* Estilo para las imágenes dentro del carrusel */
 .carrusel .img {
-    height: 90%;
-    /* Ajusta según necesites */
-    width: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
+    height: 90%; /* Altura del 90% */
+    width: 100%; /* Ancho completo */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
 }
 
-
+/* Estilo para los puntos de navegación del carrusel */
 .carrusel .puntos {
-    display: flex;
-    /* Usar flexbox para alinear los puntos */
-    justify-content: center;
-    /* Centra los puntos horizontalmente */
-    margin-top: 45px;
-    /* Espacio entre el carrusel y los puntos */
-    padding: 0;
-    /* Elimina el padding por defecto */
-    list-style: none;
-    /* Elimina los puntos de la lista */
-
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: center; /* Centra los puntos horizontalmente */
+    margin-top: 45px; /* Espacio superior de 45px */
+    padding: 0; /* Elimina el padding por defecto */
+    list-style: none; /* Elimina los puntos de la lista */
 }
 
+/* Estilo para cada punto de navegación */
 .carrusel .punto {
-    width: 14px;
-    height: 14px;
-    background-color: transparent;
-    /* Cambia a transparente si no quieres color */
-    border: 2px solid rgb(21, 20, 21);
-    /* Agrega un borde si deseas que sean visibles */
-    border-radius: 50%;
-    /* Hace que los puntos sean circulares */
-    margin: 0 7px;
-    /* Espacio entre los puntos */
-    cursor: pointer;
-    /* Cambia el cursor al pasar sobre el punto */
-
-
+    width: 14px; /* Ancho de 14px */
+    height: 14px; /* Altura de 14px */
+    background-color: transparent; /* Color de fondo transparente */
+    border: 2px solid rgb(21, 20, 21); /* Borde visible */
+    border-radius: 50%; /* Hace que los puntos sean circulares */
+    margin: 0 7px; /* Espacio horizontal entre puntos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el punto */
 }
 
+/* Estilo para el punto activo del carrusel */
 .carrusel .punto.activo {
-    background-color: rgb(65, 168, 168);
-    /* Color de fondo para el punto activo */
-
+    background-color: rgb(65, 168, 168); /* Color de fondo para el punto activo */
 }
 
+/* Estilo para el contenedor de texto */
 .wrap {
-    font-family: 'Arial Narrow Bold';
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #14d0d0;
-    padding: 10px;
-    margin: 30px;
-    text-align: center;
-    margin-top: 40px;
+    font-family: 'Arial Narrow Bold'; /* Fuente utilizada */
+    font-size: 20px; /* Tamaño de fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    color: #14d0d0; /* Color del texto */
+    padding: 10px; /* Espacio interno */
+    margin: 30px; /* Espacio externo */
+    text-align: center; /* Centra el texto */
+    margin-top: 40px; /* Espacio superior de 40px */
 }
 
-.texto{
-    text-align: start;
-    margin-top: 50px;
-    font-family: 'Arial Narrow Bold';
-    color:black;
-    font-size: 14px;
-    letter-spacing: 2px;
+/* Estilo para el texto adicional */
+.texto {
+    text-align: start; /* Alinea el texto al inicio */
+    margin-top: 50px; /* Espacio superior de 50px */
+    font-family: 'Arial Narrow Bold'; /* Fuente utilizada */
+    color: black; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
 }
 
+/* Estilo para el pie de página */
 footer {
-    
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #666;
+    margin-top: 10px; /* Espacio superior de 10px */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+    color: #666; /* Color del texto */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 1000px) {
+    .menu-container {
+        width: 100%; /* Ancho completo */
+        display: flex; /* Utiliza flexbox para el diseño */
+        flex-direction: row; /* Dispone los elementos en fila */
+        justify-content: flex-end; /* Alinea los elementos al final */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .menu-derecha {
+        display: none; /* Oculta la sección derecha del menú */
+    }
+
+    .hamburger-icon {
+        background-color: white; /* Color de fondo blanco */
+        width: 40px; /* Ancho de 40px */
+        height: 30px; /* Altura de 30px */
+        display: flex; /* Utiliza flexbox para el diseño */
+        flex-direction: column; /* Dispone los elementos en columna */
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    .hamburger-icon span {
+        background-color: #121313; /* Color de fondo de las líneas del icono */
+        width: 100%; /* Ancho completo */
+        height: 6px; /* Altura de 6px */
+        display: block; /* Muestra como bloque */
+        border-radius: 2px; /* Bordes redondeados de 2px */
+    }
+
+    .menu-izquierda {
+        display: none; /* Oculta la sección izquierda del menú */
+    }
+
+    .menu-open {
+        background-color: transparent; /* Fondo transparente cuando el menú está abierto */
+    }
+
+    .menu-container.menu-open .menu-izquierda {
+        padding: 0; /* Sin padding cuando el menú está abierto */
+        z-index: 2; /* Asegura que esté por encima de otros elementos */
+        width: auto; /* Ancho automático */
+        height: auto; /* Altura automática */
+        display: flex; /* Utiliza flexbox para el diseño */
+        flex-direction: column; /* Dispone los elementos en columna */
+        justify-content: center; /* Centra los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        border: 2px solid black; /* Borde negro */
+        background-color: rgb(182, 242, 249); /* Color de fondo del menú abierto */
+        border-radius: 15px; /* Bordes redondeados de 15px */
+    }
+
+    .menu-container .menu-open .menu-izquierda a {
+        color: white; /* Cambia el color del texto a blanco cuando el menú está abierto */
+    }
 }
